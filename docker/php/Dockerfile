@@ -1,7 +1,7 @@
 FROM composer:latest as composer
 FROM php:7.4.5-fpm-alpine3.11 as php
 
-ENV APP_FIO='Повшок Егор Андреевич'
+ENV APP_FIO='Povshok Egor Andreevich'
 COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV COMPOSER_MEMORY_LIMIT=-1
